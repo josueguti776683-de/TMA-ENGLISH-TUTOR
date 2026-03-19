@@ -11,7 +11,7 @@ api_key = st.sidebar.text_input("Pega tu API Key de Google:", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    model = genai.GenerativeModel('gemini-pro')
 
     # Menú Principal de Opciones
     opcion = st.sidebar.selectbox(
