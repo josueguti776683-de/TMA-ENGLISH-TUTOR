@@ -12,7 +12,7 @@ api_key = st.sidebar.text_input("Pega tu API Key de Google aquí:", type="passwo
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
     # Menú de opciones
     opcion = st.sidebar.selectbox("¿Qué quieres practicar?", 
